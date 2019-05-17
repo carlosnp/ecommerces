@@ -1,0 +1,16 @@
+db.sqlite3
+*/__pycache__
+*/migrations
+*/migrations/__pycache__
+*/templatetags/__pycache__
+*.sqlite3
+*.sqlite
+*.sql
+*.png
+*.jpg
+*.jpeg
+__pycache__
+media/*.png
+media/*.jpg
+media/*.jpeg
+media/*
