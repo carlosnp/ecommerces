@@ -10,6 +10,10 @@ db.sqlite3
 *.jpg
 *.jpeg
 __pycache__
+dashboard/__pycache__
+dashboard/migrations/*
+dashboard/migrations/__pycache__
+dashboard/templatetags/__pycache__
 media/*.png
 media/*.jpg
 media/*.jpeg
