@@ -1,0 +1,17 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<h2>  {% trans 'Configuration urls.py' %} </h2>
+<div class="centerdiv">
+	<p class="config1"> from django.conf.urls.i18n import i18n_patterns </p>
+	<p class="config1"> from django.views.i18n import JavaScriptCatalog </p>
+	<p class="config1"> urlpatterns = i18n_patterns( </p>
+	<p class="config1" style="margin-left: 45px;"> ... </p>
+	<p class="config1" style="margin-left: 45px;"> 
+		path('i18n/', include('django.conf.urls.i18n')), 
+	</p>
+	<p class="config1" style="margin-left: 45px;"> 
+		path('jsi18n/', JavaScriptCatalog.as_view(packages=['locale'], domain= 'django'), name='javascript-catalog'),
+	</p>
+	<p class="config1"> ) </p>
+</div>

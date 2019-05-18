@@ -29,7 +29,7 @@ urlpatterns = i18n_patterns(
     path('', include('dashboard.urls', namespace="dashboards")),
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
-    path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+    path('jsi18n/', JavaScriptCatalog.as_view(packages=['locale'], domain= 'django'), name='javascript-catalog'),
     path('404/',  django.views.defaults.page_not_found, kwargs={'exception': Exception('Page Not Found!')},name='Error404'),
 )
 

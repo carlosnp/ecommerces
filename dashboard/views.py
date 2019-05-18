@@ -16,3 +16,12 @@ class HomeView(TemplateView):
         context["title"] = _("Home Page")
         context["content"] = "Duis veniam velit dolor ex aute in magna. Ullamco mollit nisi ea cillum do laborum eu. Tempor sunt sint ipsum velit id deserunt cupidatat cillum est pariatur ex. Tempor elit fugiat commodo aliquip elit nisi incididunt consequat minim. Voluptate non pariatur sit dolor adipisicing aute minim ipsum veniam ex nostrud cillum eiusmod. Laborum exercitation consequat elit consequat non nostrud. Fugiat cillum esse ullamco minim aute minim ex do exercitation veniam."
         return context
+
+class InternationalizationView(TemplateView):
+    template_name = "Internationalization.html"
+
+    # Context Data
+    def get_context_data(self, *args, **kwargs):
+        context = super(InternationalizationView, self).get_context_data(*args,**kwargs)
+        context["title"] = _("Internationalization")
+        return context

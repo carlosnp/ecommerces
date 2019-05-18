@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1> {{ title }} </h1>
+    <!-- Manu -->
+    <div class="">
+		<ul class="nav nav-tabs nav-justified">
+			<li role="presentation" class="active">
+				<a 
+					class="nav-link active" 
+					data-toggle="tab" 
+					href="#configuration_settings">
+						{% trans 'Configuration settings.py' %}
+				</a>
+			</li>
+			<li role="presentation" class="">
+				<a 
+					class="nav-link"
+					data-toggle="tab" 
+					href="#configuration_urls"> 
+						{% trans 'Configuration urls.py' %}
+				</a>
+			</li>
+		</ul>
+    </div>
+	<!-- Contenido -->
+    <div class="tab-content">
+    	<!-- Configuration settings.py -->
+	    <div id="configuration_settings" class="tab-pane fade">
+	    	{% include 'Internationalization/config_settings.html' %}
+	    </div>
+	    <!-- Configuration urls.py -->
+	    <div id="configuration_urls" class="tab-pane fade">
+	    	{% include 'Internationalization/config_urls.html' %}
+	    </div>
+    </div>
+</div>
+
+<style>
+	.config1{
+		margin:0px;
+		padding: 0px;
+	}
+	.centerdiv{
+		margin: 0 auto;
+		width: 50%;
+		padding: 10px;
+		background-color: #ece9e9;
+	}
+</style>
+{% endblock content %}

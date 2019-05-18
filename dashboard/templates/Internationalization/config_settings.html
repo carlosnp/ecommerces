@@ -1,0 +1,54 @@
+{% load staticfiles %}
+{% load i18n %}
+<!--
+<h2>  {% trans 'Configuration settings.py' %} </h2>
+-->
+<h4> {% trans 'Add the Locale middleware in the correct position, to be able to determine the user’s language preferences through the request context' %} </h4>
+<div class="centerdiv">
+	<p class="config1">MIDDLEWARE = [</p>
+	<p class="config1" style="margin-left: 45px;">...</p>
+	<p class="config1" style="margin-left: 45px;">
+		'django.contrib.sessions.middleware.SessionMiddleware',
+	</p>
+	<p class="config1" style="margin-left: 45px;">'django.middleware.locale.LocaleMiddleware',</p>
+	<p class="config1" style="margin-left: 45px;">'django.middleware.common.CommonMiddleware',</p>
+	<p class="config1" style="margin-left: 45px;">...</p>
+	<p class="config1">]</p>
+</div>
+
+<h4>  {% trans 'Add the Template context processor' %} </h4>
+<div class="centerdiv">
+	<p class="config1">TEMPLATES = [</p>
+	<p class="config1" style="margin-left: 45px;">{</p>
+	<p class="config1" style="margin-left: 90px;">...</p>
+	<p class="config1" style="margin-left: 90px;">'OPTIONS': {</p>
+	<p class="config1" style="margin-left: 135px;">'context_processors': [</p>
+	<p class="config1" style="margin-left: 180px;">...</p>
+	<p class="config1" style="margin-left: 180px;">'django.middleware.common.CommonMiddleware',</p>
+	<p class="config1" style="margin-left: 135px;">],</p>
+	<p class="config1" style="margin-left: 90px;">},</p>
+	<p class="config1" style="margin-left: 45px;">},</p>
+	<p class="config1">]</p>
+</div>
+
+<h4>  {% trans 'Specify the languages you want to use' %} </h4>
+<div class="centerdiv">
+	<p class="config1">from django.utils.translation import ugettext_lazy as _</p>
+	<p class="config1"> # LANGUAGES </p>
+	<p class="config1"> LANGUAGES = ( </p>
+	<p class="config1" style="margin-left: 45px;"> ('es', _('Spanish')), </p>
+	<p class="config1" style="margin-left: 45px;"> ('en', _('English')), </p>
+	<p class="config1">)</p>
+	<p class="config1"> LANGUAGE_CODE = 'es' </p>
+	<p class="config1"> TIME_ZONE = 'America/Caracas' </p>
+	<p class="config1"> USE_I18N = True </p>
+	<p class="config1"> USE_L10N = True </p>
+	<p class="config1"> USE_TZ = True </p>
+</div>
+
+<h4>  {% trans 'Define locale files' %} </h4>
+<div class="centerdiv">
+	<p class="config1"> LOCALE_PATHS = ( </p>
+	<p class="config1" style="margin-left: 45px;"> os.path.join(BASE_DIR, "locale"),</p>
+	<p class="config1">)</p>
+</div>
