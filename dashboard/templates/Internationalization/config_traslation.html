@@ -1,0 +1,16 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<h4> {% trans 'Go to the terminal' %} </h4>
+<div class="centerdiv">
+	<p> 
+		{% trans 'To create the directory(locale/language) and the message file(django.po) for the language we want to translate' %}
+	</p>
+	<p class="config1"> <b>$</b> python manage.py makemessages -l es </p>
+</div>
+<div class="centerdiv">
+	<p> 
+		{% trans 'To compile all the messages and their translations of the django.po file' %}
+	</p>
+	<p class="config1"> <b>$</b>  django-admin compilemessages -l es </p>
+</div>

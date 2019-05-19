@@ -27,8 +27,17 @@ msgstr "Agregue el middleware Locale en la posición correcta, para poder determ
 msgid "Add the Template context processor"
 msgstr "Añada el procesador de contexto de las plantillas"
 
+msgid "At the beginning of the template you must add"
+msgstr "Al inicio de la plantilla se debe agregar"
+
 msgid "Configuration settings.py"
 msgstr "Configuración settings.py"
+
+msgid "Configuration templates"
+msgstr "Configuración de plantillas"
+
+msgid "Configuration traslation"
+msgstr "Configuración de la Traducción "
 
 msgid "Configuration urls.py"
 msgstr "Configuración urls.py"
@@ -36,9 +45,26 @@ msgstr "Configuración urls.py"
 msgid "Define locale files"
 msgstr "Defina los archivos de configuración regional"
 
+msgid "Go to the terminal"
+msgstr "Ve al terminal"
+
+msgid "is used for extended content, we will use it for a paragraph"
+msgstr "se usa para contenido extendido, lo usaremos para un párrafo"
+
+msgid "is used to translate a single line, we will use it for the title"
+msgstr "se usa para traducir una sola línea, la usaremos para el título"
+
 msgid "Specify the languages you want to use"
 msgstr "Especifique los idiomas que desea utilizar"
 
+msgid "To compile all the messages and their translations of the django.po file"
+msgstr "Para compilar todos los mensajes y sus traducciones del archivo django.po"
+
+msgid "To create the directory(locale/language) and the message file(django.po) for the language we want to translate"
+msgstr "Para crear el directorio (locale/language) y el archivo de mensaje (django.po) para el idioma que queremos traducir"
+
+msgid "We will use two different template tags"
+msgstr "Usaremos dos etiquetas diferentes en las plantillas."
 
 ##################################################
 #: dashboard/templates/navbar.html

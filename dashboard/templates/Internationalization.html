@@ -9,21 +9,41 @@
     <h1> {{ title }} </h1>
     <!-- Manu -->
     <div class="">
-		<ul class="nav nav-tabs nav-justified">
-			<li role="presentation" class="active">
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="nav-item">
 				<a 
-					class="nav-link active" 
+					class="active nav-link" 
+					role="tab"
 					data-toggle="tab" 
 					href="#configuration_settings">
 						{% trans 'Configuration settings.py' %}
 				</a>
 			</li>
-			<li role="presentation" class="">
+			<li role="presentation" class="nav-item">
 				<a 
 					class="nav-link"
+					role="tab"
 					data-toggle="tab" 
 					href="#configuration_urls"> 
 						{% trans 'Configuration urls.py' %}
+				</a>
+			</li>
+			<li role="presentation" class="nav-item">
+				<a 
+					role="tab"
+					class="nav-link"
+					data-toggle="tab" 
+					href="#configuration_templates"> 
+						{% trans 'Configuration templates' %}
+				</a>
+			</li>
+			<li role="presentation" class="nav-item">
+				<a 
+					class="nav-link"
+					role="tab"
+					data-toggle="tab" 
+					href="#configuration_traslation"> 
+						{% trans 'Configuration traslation' %}
 				</a>
 			</li>
 		</ul>
@@ -31,12 +51,32 @@
 	<!-- Contenido -->
     <div class="tab-content">
     	<!-- Configuration settings.py -->
-	    <div id="configuration_settings" class="tab-pane fade">
+	    <div 
+	    	role="tabpanel" 
+	    	id="configuration_settings" 
+	    	class="tab-pane fade active">
 	    	{% include 'Internationalization/config_settings.html' %}
 	    </div>
 	    <!-- Configuration urls.py -->
-	    <div id="configuration_urls" class="tab-pane fade">
+	    <div 
+	    	role="tabpanel" 
+	    	id="configuration_urls" 
+	    	class="tab-pane fade">
 	    	{% include 'Internationalization/config_urls.html' %}
+	    </div>
+	    <!-- Configuration templates -->
+	    <div 
+	    	role="tabpanel" 
+	    	id="configuration_templates" 
+	    	class="tab-pane fade">
+	    	{% include 'Internationalization/config_template.html' %}
+	    </div>
+	    <!-- Configuration traslation -->
+	    <div  
+	    	role="tabpanel" 
+	    	id="configuration_traslation" 
+	    	class="tab-pane fade">
+	    	{% include 'Internationalization/config_traslation.html' %}
 	    </div>
     </div>
 </div>

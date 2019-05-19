@@ -1,0 +1,22 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<h4> {% trans 'At the beginning of the template you must add' %} </h4>
+<div class="centerdiv">
+	<p class="config1"> <span>{</span><span>%</span> load i18n <span>%</span><span>}</span> </p>
+</div>
+<h4> {% trans 'We will use two different template tags' %} </h4>
+<div class="centerdiv">
+	<p class="config1"> 
+		<b> trans </b> {% trans 'is used to translate a single line, we will use it for the title' %} 
+	</p>
+	<p class="config1"> 
+		<b> blocktrans </b> {% trans 'is used for extended content, we will use it for a paragraph' %} </p>
+	<p></p>
+	<p>  <span>{</span><span>%</span> trans "Welcome to TaskBuster!" <span>%</span><span>}</span> </p>
+	<p>  
+		<span>{</span><span>%</span> blocktrans <span>%</span><span>}</span>
+		 Back to homepage 
+		 <span>{</span><span>%</span> endblocktrans <span>%</span><span>}</span>
+	</p>
+</div>
