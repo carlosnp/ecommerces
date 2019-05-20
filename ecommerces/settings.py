@@ -39,7 +39,11 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 PROJECT_APPS = [
-    'dashboard'
+    'accounts',
+    'carts',
+    'dashboard',
+    'orders',
+    'products'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
