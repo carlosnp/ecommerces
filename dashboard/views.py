@@ -1,10 +1,14 @@
 # Django
 from django.views import View
-from django.shortcuts import render
+from django.contrib import messages
 from django.http import HttpResponse
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
+from django.shortcuts import render, redirect
 from django.utils.translation import ugettext as _
 from django.views.generic.base import TemplateResponseMixin, ContextMixin
+
+# Project
+from .forms import ContactForm
 
 # Home Page
 class HomeView(TemplateView):
@@ -25,3 +29,21 @@ class InternationalizationView(TemplateView):
         context = super(InternationalizationView, self).get_context_data(*args,**kwargs)
         context["title"] = _("Internationalization")
         return context
+
+# Contact Page
+class ContactView(FormView, TemplateView):
+    template_name = "contact.html"
+    form_class = ContactForm
+
+    # Context Data
+    def get_context_data(self, *args, **kwargs):
+        context = super(ContactView, self).get_context_data(*args,**kwargs)
+        context["title"] = _("Contact Page")
+        context["content"] = "Spanish Main Jolly Roger walk the plank warp cutlass Sink me main sheet lad belay weigh anchor. List chantey spike chase guns jib Spanish Main salmagundi hempen halter topmast strike colors. Driver boatswain pirate Privateer bucko topmast topgallant rigging hang the jib hempen halter."
+        form = ContactForm(self.request.POST or None)
+        context["form"] = form
+        return context
+    
+    def form_valid(self, form):
+        print(form)
+        return redirect('dashboards:home')

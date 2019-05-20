@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1> {{ title }} </h1>
+    <p style="text-align: justify;"> {{ content }} </p>
+    <div class=container>
+        <form action="" method="POST" enctype="multipart/form-data" class="site-form">
+            {% csrf_token %}
+            <div class="row">
+                <!-- Nombre completo -->
+                <div class="col-sm-6 col-xs-12">
+                    <label for=""> {{ form.fullname.label }} </label>
+                    {{ form.fullname }}
+                    {% if form.fullname.errors %}
+                        {% for error in form.errors.fullname %}
+                            <p style="color:red;"> {{ error }} </p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <!-- Correo Electronico -->
+                <div class="col-sm-6 col-xs-12">
+                    <label for=""> {{ form.email.label }} </label>
+                    {{ form.email }}
+                    {% if form.email.errors %}
+                        {% for error in form.email.name %}
+                            <p style="color:red;"> {{ error }} </p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <!-- Tema -->
+                <div class="col-sm-12">
+                    <label for=""> {{ form.topic.label }} </label>
+                    {{ form.topic }}
+                    {% if form.topic.errors %}
+                        {% for error in form.topic.name %}
+                            <p style="color:red;"> {{ error }} </p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <!-- Pregunta -->
+                <div class="col-sm-12">
+                    <label for=""> {{ form.question.label }} </label>
+                    {{ form.question }}
+                    {% if form.question.errors %}
+                        {% for error in form.question.name %}
+                            <p style="color:red;"> {{ error }} </p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit"> {% trans 'Submit' %} </button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

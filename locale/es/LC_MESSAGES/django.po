@@ -67,6 +67,24 @@ msgid "We will use two different template tags"
 msgstr "Usaremos dos etiquetas diferentes en las plantillas."
 
 ##################################################
+#: dashboard/templates/contact
+
+msgid "Contact Page"
+msgstr "Página de contacto"
+
+msgid "Full name"
+msgstr "Nombre completo"
+
+msgid "Question"
+msgstr "Pregunta"
+
+msgid "Topic"
+msgstr "Tema"
+
+msgid "Submit"
+msgstr "Enviar"
+
+##################################################
 #: dashboard/templates/navbar.html
 
 msgid "About"
