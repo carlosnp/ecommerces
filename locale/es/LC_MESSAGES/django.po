@@ -120,3 +120,107 @@ msgstr "Inglés"
 msgid "Spanish"
 msgstr "Español"
 
+##################################################
+#: products/models.py
+
+msgid "Access"
+msgstr "Acceso"
+
+msgid "Active"
+msgstr "Activo"
+
+msgid "Box"
+msgstr "Caja"
+
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+msgid "Cubic centimeter"
+msgstr "Centímetro cúbico"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Featured"
+msgstr "Destacado"
+
+msgid "Gallon"
+msgstr "Galon"
+
+msgid "Gram"
+msgstr "Gramo"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Important dates"
+msgstr "Fechas Importantes"
+
+msgid "Is digital"
+msgstr "Es digital"
+
+msgid "Kilogram"
+msgstr "Kilogramo"
+
+msgid "Liter"
+msgstr "Litro"
+
+msgid "Measurements"
+msgstr "Medidas"
+
+msgid "Mililiter"
+msgstr "Mililitro"
+
+msgid "Oz"
+msgstr "Onza"
+
+msgid "Package"
+msgstr "Paquete/bulto"
+
+msgid "Price"
+msgstr "Precio"
+
+msgid "Product"
+msgstr "Producto"
+
+msgid "Products"
+msgstr "Productos"
+
+msgid "Product Information"
+msgstr "Información del producto"
+
+msgid "Products of provider"
+msgstr "Productos del proveedor"
+
+msgid "Products of providers"
+msgstr "Productos de proveedores"
+
+msgid "Provider code"
+msgstr "Código del proveedor"
+
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgid "Quantity available"
+msgstr "Cantidad disponible"
+
+msgid "Sack"
+msgstr "Saco"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Type measure food"
+msgstr "Tipo de medida de los alimentos"
+
+msgid "Unity"
+msgstr "Unidad"
+
+msgid "Update date"
+msgstr "Fecha de actualización"
+
+msgid "Volume"
+msgstr "Volumen"
+
+msgid "Weight"
+msgstr "Peso"
