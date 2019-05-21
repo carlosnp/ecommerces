@@ -1,0 +1,178 @@
+[
+  {
+    "model": "products.ProductName",
+    "pk": 1,
+    "fields": {
+      "name": "Acelga",
+      "category":"leaves"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 2,
+    "fields": {
+      "name": "Ají dulce",
+      "category":"bulbs"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 3,
+    "fields": {
+      "name": "Ajo",
+      "category":"bulbs"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 4,
+    "fields": {
+      "name": "Ajoporro",
+      "category":"stems"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 5,
+    "fields": {
+      "name": "Apio",
+      "category":"roots"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 6,
+    "fields": {
+      "name": "Auyama",
+      "category":"fruits"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 7,
+    "fields": {
+      "name": "Berenjena",
+      "category":"fruits"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 8,
+    "fields": {
+      "name": "Cebolla",
+      "category":"bulbs"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 9,
+    "fields": {
+      "name": "Cebollin",
+      "category":"stems"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 10,
+    "fields": {
+      "name": "Calabacín",
+      "category":"fruits"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 11,
+    "fields": {
+      "name": "Cilantro",
+      "category":"leaves"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 12,
+    "fields": {
+      "name": "Espinaca",
+      "category":"leaves"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 13,
+    "fields": {
+      "name": "Lechuga",
+      "category":"leaves"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 14,
+    "fields": {
+      "name": "Ocumo",
+      "category":"roots"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 15,
+    "fields": {
+      "name": "Papa",
+      "category":"tubers"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 16,
+    "fields": {
+      "name": "Platano amarillo",
+      "category":"fruits"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 17,
+    "fields": {
+      "name": "Platano verde",
+      "category":"fruits"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 18,
+    "fields": {
+      "name": "Perejil",
+      "category":"leaves"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 19,
+    "fields": {
+      "name": "Remolacha",
+      "category":"bulbs"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 20,
+    "fields": {
+      "name": "Tomate",
+      "category":"fruits"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 21,
+    "fields": {
+      "name": "Yuca",
+      "category":"roots"
+    }
+  },
+  {
+    "model": "products.ProductName",
+    "pk": 22,
+    "fields": {
+      "name": "Zanahoria",
+      "category":"roots"
+    }
+  }
+]

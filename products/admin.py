@@ -5,7 +5,7 @@ from django.utils.translation import gettext as _
 from django.utils.translation import ugettext_lazy as _l
 
 # Project
-from .models import Product, ProductProvider
+from .models import ProductName, Product, ProductProvider
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['title','description','price', 'quantity',
@@ -14,7 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
     fieldsets = (
         (_('Product Information'), {'fields': ('title','slug', 'description', 'price', 'quantity', 'quantity_available')}),
         (_l('Important dates'), {'fields': ('updated','timestamp')}),
-        (_l('Access'), {'fields': ('active','featured', 'is_digital')}),
+        (_l('Access'), {'fields': ('active','featured')}),
     )
     list_display_links  = ['title']
     list_editable       = ['active','price', 'quantity']
@@ -23,22 +23,23 @@ class ProductAdmin(admin.ModelAdmin):
     class Meta:
         model = Product
 
-class ProductProviderAdmin(admin.ModelAdmin):
-    list_display = ['title','price', 'quantity', 'quantity_available', 
-                    'active','updated', 'timestamp',
-                    ]
-    fieldsets = (
-        (_('Product Information'), {'fields': ('title','slug', 'description', 'price', 'quantity', 'quantity_available')}),
-        (_l('Important dates'), {'fields': ('updated','timestamp')}),
-        (_l('Access'), {'fields': ('active','featured', 'is_digital')}),
-        (_l('Measurements'), {'fields': ('measure_food','measure_Volume','measure_Weight')}),
-    )
-    list_display_links  = ['title']
-    list_editable       = ['active','price','quantity_available']
-    readonly_fields 	= ['slug', 'updated','timestamp']
+class ProductNameAdmin(admin.ModelAdmin):
+    list_display = ['name', 'category']
+    ordering = ['name']
 
+    class Meta:
+        model = ProductName
+
+class ProductProviderAdmin(admin.ModelAdmin):
+    list_display = ['product_name','quantity', 'measure_food', 'price_unitary', 
+                    'price_subtotal'
+                    ]
+    ordering = ['product_name']
+    readonly_fields 	= ['price_subtotal',]
+    
     class Meta:
         model = ProductProvider
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(ProductProvider, ProductProviderAdmin)
+admin.site.register(ProductName, ProductNameAdmin)

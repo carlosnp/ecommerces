@@ -175,13 +175,22 @@ msgid "Oz"
 msgstr "Onza"
 
 msgid "Package"
-msgstr "Paquete/bulto"
+msgstr "Paquete"
+
+msgid "Potato"
+msgstr "Papa"
 
 msgid "Price"
 msgstr "Precio"
 
+msgid "Price by unit"
+msgstr "Precio por unidad"
+
 msgid "Product"
 msgstr "Producto"
+
+msgid "Product name"
+msgstr "Nombre del producto"
 
 msgid "Products"
 msgstr "Productos"
